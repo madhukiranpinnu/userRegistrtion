@@ -20,3 +20,15 @@ then
  else
    echo "invalid firstnme"
  fi
+
+
+##lastname
+read -p "enter valid first name :" lastName
+#verifying valid username
+usernamepattern="[a-zA-Z]{2,}"
+if [[ $lastName =~ $usernamepattern ]]
+then
+    echo " valid lastname"
+ else
+   echo "invalid lastnme"
+ fi
