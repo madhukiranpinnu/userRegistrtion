@@ -9,3 +9,14 @@ then
 else
         echo "invalid"
 fi
+
+##firstname
+read -p "enter valid first name :" firstName
+#verifying valid username
+usernamepattern="[a-zA-Z]{2,}"
+if [[ $firstName =~ $usernamepattern ]]
+then
+    echo " valid firstnme"
+ else
+   echo "invalid firstnme"
+ fi
