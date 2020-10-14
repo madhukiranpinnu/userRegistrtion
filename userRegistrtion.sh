@@ -25,7 +25,7 @@ then
 ##lastname
 read -p "enter valid first name :" lastName
 #verifying valid username
-usernamepattern="[a-zA-Z]{2,}"
+usernamepattern="^[[:upper:]]([[:lower:]]{3,})$"
 if [[ $lastName =~ $usernamepattern ]]
 then
     echo " valid lastname"
