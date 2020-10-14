@@ -13,7 +13,7 @@ fi
 ##firstname
 read -p "enter valid first name :" firstName
 #verifying valid username
-usernamepattern="[a-zA-Z]{2,}"
+usernamepattern="^[[:upper:]]([[:lower:]]{3,})$"
 if [[ $firstName =~ $usernamepattern ]]
 then
     echo " valid firstnme"
